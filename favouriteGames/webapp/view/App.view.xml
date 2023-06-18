@@ -1,0 +1,69 @@
+<mvc:View controllerName="favouritegames.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Shell>
+        <App>
+            <pages>
+                <Page id="page"
+                    title="{i18n>title}">
+    <Table id="tblstudents"
+		inset="false"
+		items="{
+			path: '/Student',
+			sorter: {
+				path: 'Name'
+			}
+		}">
+		
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Studentid" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Surname" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Forname" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="Center">
+				<Text text="Class" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="Dob" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					<Text
+						text="{Studentid}" />
+					<Text
+						text="{Surname}" />
+					<Text
+						text="{Forname}" />
+					<Text
+						text="{Class}" />
+					<Text
+						text="{Dob}" />
+					
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

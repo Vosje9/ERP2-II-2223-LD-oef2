@@ -1,0 +1,64 @@
+<mvc:View controllerName="favouritegames.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Shell>
+        <App>
+            <pages>
+                <Page id="page"
+                    title="Favourite Games">
+    <Table id="tblfavgames"
+		inset="false"
+		items="{
+			path: '/Game',
+			sorter: {
+				path: 'Name'
+			}
+		}">
+		
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Games" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Name" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Genre" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="Center">
+				<Text text="Console" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					<Text
+						text="{Games}" />
+					<Text
+						text="{Name}" />
+					<Text
+						text="{Genre}" />
+					<Text
+						text="{Console}" />
+					
+					
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
