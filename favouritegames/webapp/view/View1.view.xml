@@ -1,8 +1,8 @@
-<mvc:View controllerName="favouritegames.controller.App"
-    xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
+<mvc:View controllerName="favouritegames.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Shell>
+   
+        <Shell>
         <App>
             <pages>
                 <Page id="page"
@@ -66,4 +66,5 @@
             </pages>
         </App>
     </Shell>
+   
 </mvc:View>

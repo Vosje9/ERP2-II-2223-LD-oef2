@@ -39,7 +39,7 @@ sap.ui.define([
 							"tiles": [{
 								"tileType": "sap.ushell.ui.tile.StaticTile",
 								"properties": {
-									"title": "Student games",
+									"title": "App Title",
 									"targetURL": "#favouritegames-display"
 								}
 							}]
@@ -54,8 +54,8 @@ sap.ui.define([
 							"favouritegames-display": {
 								"semanticObject": "favouritegames",
 								"action": "display",
-								"description": "A Fiori application.",
-								"title": "Student games",
+								"description": "A Fiori application for students favourite games",
+								"title": "App Title",
 								"signature": {
 									"parameters": {}
 								},

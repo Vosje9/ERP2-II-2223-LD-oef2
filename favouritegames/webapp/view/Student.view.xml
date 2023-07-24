@@ -6,11 +6,11 @@
         <App>
             <pages>
                 <Page id="page"
-                    title="Favourite Games">
-    <Table id="tblfavgames"
+                    title="{i18n>title}">
+    <Table id="tblstudents"
 		inset="false"
 		items="{
-			path: '/Game',
+			path: '/Student',
 			sorter: {
 				path: 'Name'
 			}
@@ -19,38 +19,43 @@
 		<columns>
 			<Column
 				width="12em">
-				<Text text="Games" />
+				<Text text="Studentid" />
 			</Column>
 			<Column
 				minScreenWidth="Tablet"
 				demandPopin="true">
-				<Text text="Name" />
+				<Text text="Surname" />
 			</Column>
 			<Column
 				minScreenWidth="Desktop"
 				demandPopin="true"
 				hAlign="End">
-				<Text text="Genre" />
+				<Text text="Forname" />
 			</Column>
 			<Column
 				minScreenWidth="Desktop"
 				demandPopin="true"
 				hAlign="Center">
-				<Text text="Console" />
+				<Text text="Class" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="Dob" />
 			</Column>
 		</columns>
 		<items>
 			<ColumnListItem vAlign="Middle">
 				<cells>
 					<Text
-						text="{Games}" />
+						text="{Studentid}" />
 					<Text
-						text="{Name}" />
+						text="{Surname}" />
 					<Text
-						text="{Genre}" />
+						text="{Forname}" />
 					<Text
-						text="{Console}" />
-					
+						text="{Class}" />
+					<Text
+						text="{Dob}" />
 					
 					
 				</cells>
@@ -62,3 +67,6 @@
         </App>
     </Shell>
 </mvc:View>
+
+
+
