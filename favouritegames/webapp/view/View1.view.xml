@@ -6,7 +6,7 @@
         <App>
             <pages>
                 <Page id="page"
-                    title="{i18n>title}">
+                    title="Students">
     <Table id="tblstudents"
 		inset="false"
 		items="{
